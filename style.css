@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./imagens/back-white.jpg) no-repeat top center/cover;
+}
+
+body * {
+    font-family: 'Roboto Slab', serif;
+    color: #001858;
+}
+
+#container {
+    width: 360px;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+}   
+
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img {
+    width: 112px;
+}
+
+#profile p {
+ font-weight: 500;
+ line-height: 24px;
+ margin-top: 8px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 0;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 16px 24px;
+    background: rgba(112, 110, 110, 0.486);
+    border: 1px #001858 solid;
+    border-radius: 8px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2;
+}
+
+ul li a:hover{
+    background: rgba(202, 198, 198, 0.3);
+    border: 1.5px #001858 solid;
+
+}
+
+#social_links {
+    display: flex;
+
+    padding: 24px 0;
+    font-size: 30px;
+
+    justify-content: center;
+}
+
+#social_links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#social_links a:hover{
+    background: rgba(202, 198, 198, 0.3);
+   
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+}
