@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+--bg-url: url(./imagens/back-white.jpg);
+
+}
+
 body {
-    background: url(./imagens/back-white.jpg) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -92,4 +98,10 @@ ul li a:hover{
 footer {
     padding: 24px 0;
     text-align: center;
+}
+
+@media (min-width:700px) {
+    :root {
+        --bg-url: url(./imagens/Desktop.jpg);
+    }
 }
